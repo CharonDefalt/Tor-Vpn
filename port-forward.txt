@@ -4,13 +4,16 @@
 
 sudo nano /etc/tor/torrc
 
-SocksPort 127.0.0.1:8585
+SocksPort 0.0.0.0:8585
 
 press ctrl+x after that press y button and then it's save :) 
 
 run tor or tor service 
 
-# Convert socks5 to Http
+
+
+
+#Convert socks5 to Http using privoxy
 
 sudo apt install privoxy -y 
 
