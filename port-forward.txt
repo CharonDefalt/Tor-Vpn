@@ -1,0 +1,33 @@
+#Made by defalt
+
+#Tor open port
+
+sudo nano /etc/tor/torrc
+
+SocksPort 127.0.0.1:8585
+
+press ctrl+x after that press y button and then it's save :) 
+
+run tor or tor service 
+
+# Convert socks5 to Http
+
+sudo apt install privoxy -y 
+
+sudo nano /etc/privoxy/config
+
+forward-socks5 / 127.0.0.1:8585  .
+forward-socks4a / 127.0.0.1:8585 .
+forward-socks5t / 127.0.0.1:8585 .
+forward         192.168.*.*/     .
+forward            10.*.*.*/     .
+forward           127.*.*.*/     .
+forward           localhost/     .
+
+
+press ctrl+x after that press y button and then it's save :) 
+
+sudo service privoxy restart
+
+Now Enjoy Tor Http using 8118 port :)
+
