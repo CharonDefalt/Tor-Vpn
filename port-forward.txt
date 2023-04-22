@@ -10,8 +10,13 @@ press ctrl+x after that press y button and then it's save :)
 
 run tor or tor service 
 
+#Convert socks5 to http using tor
 
+sudo nano /etc/tor/torrc
 
+HTTPTunnelPort 0.0.0.0:9080
+
+save and enjoy :)
 
 #Convert socks5 to Http using privoxy
 
