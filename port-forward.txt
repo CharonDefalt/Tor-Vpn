@@ -18,24 +18,8 @@ HTTPTunnelPort 0.0.0.0:9080
 
 save and enjoy :)
 
-#Convert socks5 to Http using privoxy
+#Tor specifice IP
 
-sudo apt install privoxy -y 
+sudo nano /etc/tor/torrc
 
-sudo nano /etc/privoxy/config
-
-forward-socks5 / 127.0.0.1:8585  .
-forward-socks4a / 127.0.0.1:8585 .
-forward-socks5t / 127.0.0.1:8585 .
-forward         192.168.*.*/     .
-forward            10.*.*.*/     .
-forward           127.*.*.*/     .
-forward           localhost/     .
-
-
-press ctrl+x after that press y button and then it's save :) 
-
-sudo service privoxy restart
-
-Now Enjoy Tor Http using 8118 port :)
-
+ExitNodes {US}
