@@ -22,4 +22,6 @@ save and enjoy :)
 
 sudo nano /etc/tor/torrc
 
-ExitNodes {US}
+ExitNodes {US} StrictNodes 1
+
+ExitNodes {ca},{eg},{tr} StrictNodes 1
