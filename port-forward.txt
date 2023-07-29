@@ -16,6 +16,8 @@ sudo nano /etc/tor/torrc
 
 HTTPTunnelPort 0.0.0.0:9080
 
+Bridge YOUR_BRIDGE_from_torProject
+
 save and enjoy :)
 
 #Tor specifice IP
