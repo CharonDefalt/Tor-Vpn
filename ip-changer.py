@@ -8,7 +8,7 @@
 #Up command run's script in every 15 minutes
 
 
-# Importment : You must delete # behind ControlPort and HashPassword in torrc file 
+# Important : You must delete # behind ControlPort and HashPassword in torrc file 
 
 
 from stem import Signal
