@@ -29,3 +29,17 @@ sudo nano /etc/tor/torrc
 ExitNodes {US} StrictNodes 1
 
 ExitNodes {ca},{eg},{tr} StrictNodes 1
+
+#Tor obsf4 proxy
+
+sudo apt install obfs4proxy
+
+SocksPort 0.0.0.0:8585
+HttpTunnelPort 0.0.0.0:9090
+
+ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+ClientTransportPlugin obfs3 exec /usr/bin/obfs4proxy
+
+UseBridge 1
+Bridge obfs4 82.74.251.112:9449 628B95EEAE48758CBAA2812AE99E1AB5B3BE44D4 cert=i7tmgWvq4X2rncJz4FQsQWwkXiEWVE7Nvm1gffYn5ZlVsA0kBF6c/8041dTB4mi0TSShWA iat-mode=0
+Bridge obfs4 185.247.224.38:7200 96056A669C2207CB1F51600A7AFDDFEC4195AD0F cert=8IV21RIHNrmxYBybBtYDeI6tFMkFv0e8dxB3M0tAWlo9yY1gzic7Pecymlu7ppxFqbyyJQ iat-mode=0
