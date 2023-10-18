@@ -1,0 +1,19 @@
+First : install privoxy
+
+sudo apt install privoxy
+
+Second :  Configure the privoxy to use socks5 as http
+
+sudo nano /etc/privoxy/config 
+
+Then press CTRL+W and search  listen-address  clear # behind it and write it like this yourip:8118
+
+After that go to the end of the file and write this 
+
+forward-socks5t / 127.0.0.1:9050     
+
+Notic : about the the 9050   if you forwareded your port to the other port number you must set that
+
+Example i set tor port as i said i portforward.txt to 8585 i must change 9050 to 8585
+
+Enjoy :)
