@@ -16,4 +16,14 @@ Notic : about the the 9050   if you forwareded your port to the other port numbe
 
 Example i set tor port as i said i port-forward.txt to 8585 i must change 9050 to 8585
 
+Third (End part) :  you sholud save your changes with press CRTL+X and press Y and then press ENTER in the end you have to run this command 
+
+sudo service privoxy restart
+
+Now have fun  you can set your ip to your browser with this port 8118  and you must set it as HTTP    
+
+example :
+
+HTTP 192.168.110.251 8118
+
 Enjoy :)
