@@ -6,7 +6,9 @@ Second :  Configure the privoxy to use socks5 as http
 
 sudo nano /etc/privoxy/config 
 
-Then press CTRL+W and search  listen-address  clear # behind it and write it like this yourip:8118
+Then press CTRL+W and search  listen-address  clear # behind it and write it like this 
+
+192.168.110.251(YOUR_IP):8118
 
 After that go to the end of the file and write this 
 
