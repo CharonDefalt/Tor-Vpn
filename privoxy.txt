@@ -12,7 +12,7 @@ Then press CTRL+W and search  listen-address  clear # behind it and write it lik
 
 After that go to the end of the file and write this 
 
-forward-socks5t / 127.0.0.1:9050     
+forward-socks5t / 127.0.0.1:9050 .    
 
 Notic : about the the 9050   if you forwareded your port to the other port number you must set that
 
