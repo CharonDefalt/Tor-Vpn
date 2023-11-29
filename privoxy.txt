@@ -8,7 +8,7 @@ sudo nano /etc/privoxy/config
 
 Then press CTRL+W and search  listen-address  clear # behind it and write it like this 
 
-192.168.110.251(YOUR_IP):8118
+listen-address 192.168.110.251(YOUR_IP):8118
 
 After that go to the end of the file and write this 
 
