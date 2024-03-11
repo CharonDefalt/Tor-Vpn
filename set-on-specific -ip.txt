@@ -1,0 +1,18 @@
+sudo apt-get install ufw
+sudo ufw allow from any to TOR-SERVER port 8118 (privoxy port)
+sudo ufw deny from any to TOR-SERVER port 8118
+sudo ufw allow from YOUR-SERVER-IP to TOR-SERVER port 8118
+
+Notice : if you connect to the TOR-SERVER with ssh you must open ssh on ufw 
+
+sudo ufw allow 22
+
+OR  set specific ip for that can connect
+
+sudo ufw allow from YOUR-SERVER-IP to TOR-SERVER port 22
+
+After all
+
+sudo ufw enable
+
+Enjoy :)
