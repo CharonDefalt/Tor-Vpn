@@ -1,3 +1,5 @@
+#For-Linux
+
 First : install privoxy
 
 sudo apt install privoxy
@@ -27,5 +29,32 @@ Now have fun  you can set your ip to your browser with this port 8118  and you m
 example :
 
 HTTP 192.168.110.251 8118
+
+Enjoy :)
+
+######################################################
+
+#For-windows
+
+For example we have server and connect to it with  bitvise after connecting to your server go to services tab and click on SOCKS/HTTP Proxy Forwarding you change your IP and Port .
+
+As an example I change it to 1111 .
+
+After that install privoxy on your windows machine then go to config files from this directory C:\Program Files (x86)\Privoxy/config.txt 
+
+Notice : you have to run your notepad or other editors as adiministrator .
+
+OR 
+
+open Options and click on Edit Main Configuration .
+
+
+After all , in config file you have write this rule in your file 
+
+forward-socks4 / 127.0.0.1:1111 .
+
+Notice : You have to write the Socks Port on bitviess .
+
+In the end you can connect to your proxy  : HTTP 127.0.0.1 8118
 
 Enjoy :)
